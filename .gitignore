@@ -215,4 +215,27 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
+
+# ===================================================
+# Custom Rules for Adversarial ML & Network Datasets
+# ===================================================
+
+# 1. Ignore massive network datasets (CSVs, PCAPs, logs)
+*.csv
+*.pcap
+data/
+datasets/
+CICID2017/
+
+# 2. Ignore heavy ML model weights, metrics, and checkpoints
+*.h5
+*.pkl
+*.pt
+*.pth
+models/
+checkpoints/
+
+# 3. Clean up local IDE configuration folders (Uncommenting standard ignores)
+.vscode/
+.idea/
 .streamlit/secrets.toml
